@@ -1,20 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<!-- <button id="myObject"  #elm style="transform: translate3d(636px, 20px, 0);"></button> -->
+<button id="character"  #character [@moveCharacter]=currentState style="transform: translate3d(886px, 575px, 0);"></button>
+
+<button id="btn-decision" (click)="toFootball()" style="transform: translate3d(286px, 375px, 0)">Football</button>
+<button id="btn-decision" (click)="toHospital()" style="transform: translate3d(390px, 375px, 0);">Hospital</button>
+
+<button id="btn-decision" (click)="fromHospitalToFastFood()" style="transform: translate3d(1500px, 900px, 0)">Fast Food</button>
+<button id="btn-decision" (click)="fromHospitalToHealthyFood()" style="transform: translate3d(1600px, 900px, 0);">Healthy Food</button>
+
+<button id="btn-decision" (click)="fromFootballToFastFood()" style="transform: translate3d(1500px, 1500px, 0)">Fast Food</button>
+<button id="btn-decision" (click)="fromFootballToHealthyFood()" style="transform: translate3d(1600px, 1500px, 0);">Healthy Food</button>
+
+<button id="btn-decision" (click)="fromHealthyToPlaying()" style="transform: translate3d(2500px, 900px, 0)">Play a game</button>
+<button id="btn-decision" (click)="fromHealthyToRunning()" style="transform: translate3d(2620px, 900px, 0);">Running</button>
+
+<button id="btn-decision" (click)="fromFastFoodToPlaying()" style="transform: translate3d(2500px, 1500px, 0)">Play a game</button>
+<button id="btn-decision" (click)="fromFastFoodToRunning()" style="transform: translate3d(2620px, 1500px, 0);">Running</button>
+
+<button id="btn-decision" (click)="fromRunningToDoctor()" style="transform: translate3d(3600px, 900px, 0)">Doctor</button>
+<button id="btn-decision" (click)="fromRunningToTv()" style="transform: translate3d(3720px, 900px, 0)">TV</button>
+
+<button id="btn-decision" (click)="fromPlayingToDoctor()" style="transform: translate3d(3600px, 1500px, 0)">Doctor</button>
+<button id="btn-decision" (click)="fromPlayingToTv()" style="transform: translate3d(3720px, 1500px, 0);">TV</button>
+
+<button id="btn-decision" (click)="fromDoctorToWater()" style="transform: translate3d(4900px, 900px, 0)">Water</button>
+<button id="btn-decision" (click)="fromTvToWater()" style="transform: translate3d(4900px, 1500px, 0)">Water</button>
+
+<button id="btn-decision" (click)="fromWaterToEnergy()" style="transform: translate3d(6000px, 900px, 0)">Energy</button>
+<button id="btn-decision" (click)="fromWaterToToilet()" style="transform: translate3d(6000px, 1500px, 0)">Toilet</button>
+
+<button id="btn-decision" (click)="fromEnergyToPlus()" style="transform: translate3d(7100px, 900px, 0)">Plus</button>
+<button id="btn-decision" (click)="fromToiletToFire()" style="transform: translate3d(7100px, 1500px, 0)">Fire</button>
+
+<button id="btn-decision" (click)="fromPlusToEnd()" style="transform: translate3d(8200px, 900px, 0)">End</button>
+<button id="btn-decision" (click)="fromFireToEnd()" style="transform: translate3d(8200px, 1500px, 0)">End</button>
+
+<button id="btn-decision" (click)="startAgian()" style="transform: translate3d(9950px, 2100px, 0)">Start Again</button>
+<canvas #canvas id="myCanvas" width="11000" height="2500"></canvas>
